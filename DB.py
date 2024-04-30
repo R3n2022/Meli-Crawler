@@ -1,6 +1,5 @@
 import os
 import json
-from colorama import Fore
 
 def cargar_diccionario_desde_archivo(nombre_archivo):
     diccionario = {}
@@ -11,7 +10,7 @@ def cargar_diccionario_desde_archivo(nombre_archivo):
 
 def guardar_diccionario_en_archivo(diccionario, nombre_archivo):
     with open(nombre_archivo, 'w') as archivo:
-        json.dump(diccionario, archivo, indent=4) # Usar indent=4 para formatear el JSON con indentación
+        json.dump(diccionario, archivo, indent=4)# Usar indent=4 para formatear el JSON con indentación
 
 def menu_diccionario(diccionario_links, nombre_archivo):
     while True:

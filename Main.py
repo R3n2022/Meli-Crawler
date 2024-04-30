@@ -1,5 +1,5 @@
 from colorama import init, Fore
-from DB import gestionar_diccionario, cargar_diccionario_desde_archivo
+from DB import gestionar_diccionario
 from Scraping_general import buscar_productos
 from Scraping_competidores import buscar_productos_competencia, exportar_a_excel, cargar_competidores_desde_json
 import pandas as pd
@@ -23,7 +23,6 @@ def mostrar_menu():
 def main():
     print('Bienvenido al Script de Búsqueda en MercadoLibre V1.0')
     nombre_archivo_links = 'diccionario_enlaces.json'
-    diccionario_links = cargar_diccionario_desde_archivo(nombre_archivo_links)
 
     while True:
         mostrar_menu()

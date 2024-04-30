@@ -1,8 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-from colorama import Fore, Style
+from colorama import Fore
 import openpyxl
-from urllib.parse import urlparse
 import json
 
 def cargar_competidores_desde_json(filename):
